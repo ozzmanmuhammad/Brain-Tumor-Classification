@@ -34,7 +34,7 @@ using sklearn train_test_split into 80-20 train and val datasets. The 'pred' ima
 
 some examples from the Train datasets:
 
-![alt text](https://github.com/ozzmanmuhammad/FoodVision/blob/main/Images/Food101_examples.png "Train data examples")
+![alt text](https://github.com/ozzmanmuhammad/Brain-Tumor-Classification/blob/main/images/tumor_examples.png "Train data examples")
 
 ## Model Building and Performance
 
@@ -53,12 +53,12 @@ The experiments was done on CNN architecture model, which was trainied 10 epochs
 ## Analysis
 Model achieved 97% accuracy which was not surprising as it was trained on less data and epochs, and it was overfitting. The overfitting was clear when I build the graph
 between loss and accuracy curves ( training and validation ) because the perfect generalized model's training and validation curves are always to each other and follow similar pattern. As the below graph clearly shows the distance between curves, Nevertheless it was able to achieve the accuracy as of our target goal 90+% top-1 accuracy.
-<img src="https://github.com/ozzmanmuhammad/FoodVision/blob/main/Images/Confusion_matrix_experiment1.png" alt="Confusion Matrix"  width="500"/>
+<img src="https://github.com/ozzmanmuhammad/Brain-Tumor-Classification/blob/main/images/accuracy.png" alt="Accuracy Curve"  width="500"/>
 
 
 ## Predictions on Custom Images
 For prediction I used the 'pred' images which were unseen for the model. These images were also preprocessed to match there dimension, shape and scale. Out of 9 model predicted all correct with high probability scores.
-<img src="https://github.com/ozzmanmuhammad/FoodVision/blob/main/Images/predictions_custom_images.png" alt="Custom Predictions" width="700"/>
+<img src="https://github.com/ozzmanmuhammad/Brain-Tumor-Classification/blob/main/images/tumor_preds.png" alt="Custom Predictions" width="700"/>
 
 ## Live Predictions in Browser.
-Model was download in Keras .h5 format and then was converted for tensorflow java script. Upload any MRI brain scan image and test the prediction. The predictions are not always right. To try it yourself please visit project page on my.
+Model was download in Keras .h5 format and then was converted for tensorflow java script. Upload any MRI brain scan image and test the prediction. The predictions are not always right. To try it yourself please visit project page on my <a href="https://ozzmanmuhammad.github.io/project-BrainTumor.html" target="_blank">"Portfolio."</a>
